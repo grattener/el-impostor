@@ -11,7 +11,7 @@ export default function App() {
   const { gameState, loading, eliminatedPlayerId, actions } = useGameLogic();
 
   return (
-    <div className="w-full h-full min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-indigo-500/30 flex items-center justify-center p-0 md:p-4">
+    <div className="w-full h-[100dvh] bg-slate-900 text-slate-100 font-sans selection:bg-indigo-500/30 flex items-center justify-center p-0 md:p-4 overflow-hidden">
       <div className="w-full h-full md:h-[90vh] md:max-h-[850px] max-w-md bg-slate-900 md:bg-slate-900/50 md:backdrop-blur-sm md:rounded-3xl md:shadow-2xl md:border md:border-slate-800 overflow-hidden flex flex-col relative">
 
         {gameState.phase === GamePhase.SETUP && (
